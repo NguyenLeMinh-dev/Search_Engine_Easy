@@ -1,0 +1,36 @@
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+.action-button { 
+    transition: all 0.2s ease-in-out; 
+}
+.action-button:hover { 
+    transform: scale(1.05); 
+}
+#map { 
+    height: 500px; 
+    width: 100%; 
+    border-radius: 0.5rem; 
+    position: relative; 
+}
+.modal { 
+    transition: opacity 0.25s ease; 
+}
+/* Ẩn bảng tóm tắt lộ trình của Leaflet Routing Machine */
+.leaflet-routing-container { 
+    display: none; 
+}
+
+/* Style cho nút chọn phương tiện */
+.travel-mode-btn {
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+.travel-mode-btn.active {
+    border-color: #0d9488; /* teal-600 */
+    background-color: #ccfbf1; /* teal-100 */
+    color: #134e4a; /* teal-900 */
+}
+.travel-mode-btn.active svg {
+    color: #0d9488; /* teal-600 */
+}

@@ -1,0 +1,37 @@
+# Cache và build
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dữ liệu và model nặng
+datas/
+core/data/
+core/best_two_tower_model_pytorch/
+*.pth
+*.pt
+*.onnx
+*.bin
+*.safetensors
+*.zip
+
+# Database và file json
+*.db
+*.json
+*.csv
+*.npy
+*.pkl
+
+# Ảnh và video
+*.jpg
+*.jpeg
+*.png
+*.mp4
+
+# Log và tạm
+*.log
+*.tmp
+*.out
+
+# Jupyter checkpoints
+*.ipynb_checkpoints/
