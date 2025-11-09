@@ -9,7 +9,7 @@ from tqdm import tqdm
 # PHẦN 1: CẤU HÌNH
 # ==============================================================================
 
-API_KEY = "AIzaSyBDquurKfKANJDXlnA8-pvCbyOfBCDzAXs"
+API_KEY = 
 
 if not API_KEY:
     raise EnvironmentError("Lỗi: Vui lòng đặt biến môi trường GEMINI_API_KEY")
