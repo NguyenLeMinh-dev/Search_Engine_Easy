@@ -20,8 +20,9 @@ LLM_MODEL_NAME = 'gemini-2.0-flash'
 
 # !!! LẤY API KEY TỪ BIẾN MÔI TRƯỜNG (An toàn hơn)
 # Chạy 'export GEMINI_API_KEY="KEY_CUA_BAN"' trong terminal trước
-# AIzaSyADR9Duwd8NvqbLth1QHRMwFK8v0BVNzfM
-GEMINI_API_KEY = 'AIzaSyDTfQ02luFUaPkhrHEYHaEgit0d2Mh53is'
+
+
+GEMINI_API_KEY = 'API here'
 if not GEMINI_API_KEY:
     print("LỖI: Không tìm thấy GEMINI_API_KEY trong biến môi trường.")
     exit()
