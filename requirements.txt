@@ -1,0 +1,25 @@
+# Flask & CORS
+Flask==3.0.3
+Flask-Cors==4.0.1
+Werkzeug==3.0.3
+
+# Database
+pysqlite3
+
+# Data processing
+pandas==2.2.2
+numpy==1.26.4
+
+# BM25
+rank-bm25==0.2.2
+
+# Transformers & PyTorch
+transformers==4.41.2
+torch==2.3.0
+sentencepiece==0.2.0
+
+# FAISS (CPU version)
+faiss-cpu==1.7.4
+
+# Regex
+regex==2024.5.15

@@ -13,11 +13,11 @@ import re
 # --- File Paths ---
 # Đường dẫn này là tương đối so với nơi bạn chạy 'app.py'
 # Giả sử 'final_processed_data.csv' và 'embeddings.npy' nằm cùng cấp với 'app.py'
-PROCESSED_DATA_CSV = "/home/minh/Documents/SEG_project/datas/datas_crawl/final_processed_data.csv"
-EMBEDDINGS_FILE = "/home/minh/Documents/SEG_project/datas/datas_crawl/vietnamese-bi-encoder.npy"
+PROCESSED_DATA_CSV = "./datas/datas_crawl/final_processed_data.csv"
+EMBEDDINGS_FILE = "./datas/datas_crawl/3epochs.npy"
 
 # --- Model Configuration ---
-MODEL_NAME = "bkai-foundation-models/vietnamese-bi-encoder"
+MODEL_NAME = "./datas/datas_crawl/fintune_sbert_3epochs"
 
 # --- Search Hyperparameters ---
 TOP_K = 100

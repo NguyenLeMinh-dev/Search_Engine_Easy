@@ -1,18 +1,15 @@
 import os
 import json
-from flask import Flask, request, jsonify, send_from_directory, g # <--- THÊM 'g'
+from flask import Flask, request, jsonify, send_from_directory, g 
 from flask_cors import CORS
-from search_engine import SearchEngine
+from utils.system_search_engine import SearchEngine
 import pandas as pd
 
-# --- (MỚI) Thêm các thư viện cho database và auth ---
 import sqlite3
 from werkzeug.security import generate_password_hash, check_password_hash
 
-# ==============================================================================
-# CẤU HÌNH (TỪ FILE CỦA BẠN)
-# ==============================================================================
-IMAGE_FOLDER = '/home/minh/Documents/SEG_project/datas/food_images'
+
+IMAGE_FOLDER = '/home/truong/Search_Engine_Easy/datas/datas_crawl/food_images'
 print(IMAGE_FOLDER)
 app = Flask(__name__)
 CORS(app)
@@ -21,7 +18,7 @@ CORS(app)
 DATABASE = 'database.db' # Tệp này sẽ nằm cùng cấp với app.py
 
 # ==============================================================================
-# KHỞI TẠO SEARCH ENGINE (TỪ FILE CỦA BẠN)
+# KHỞI TẠO SEARCH ENGINE
 # ==============================================================================
 print("🚀 Đang khởi tạo Search Engine... Vui lòng đợi.")
 try:
@@ -157,6 +154,7 @@ def login():
             "user_id": user['id'],
             "username": user['username']
         })
+    
     else:
         # Sai mật khẩu
         return jsonify({"success": False, "message": "Sai mật khẩu."}), 401
