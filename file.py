@@ -2,7 +2,7 @@ import os
 
 # 1. CẤU HÌNH (Lấy từ file eval_system.py của bạn)
 # Đây là thư mục chứa các file "Bài làm" (ví dụ: search_results_com_chay.csv)
-RESULT_DIR = "/home/minh/Documents/SEG_project/datas/label" 
+RESULT_DIR = "./datas/label" 
 
 # 2. Tiền tố (prefix) của các file kết quả
 # (Dựa trên tên file của bạn: "search_results_...")
@@ -41,7 +41,7 @@ def extract_queries_from_filenames(directory, prefix):
                 
                 query_list.append(query_text)
         
-        print(f"✅ Đã trích xuất thành công {len(query_list)} truy vấn.")
+        print(f" Đã trích xuất thành công {len(query_list)} truy vấn.")
         
         # In ra ở dạng dễ sao chép (mỗi dòng 1 query)
         print("\n" + "="*40)
